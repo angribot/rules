@@ -5,7 +5,7 @@
 Proxy = select, policy-path=订阅链接
 
 [Rule]
-RULE-SET,https://github.com/AkinoYuiko/rules/raw/main/boost.lsr,Proxy
+RULE-SET,https://github.com/angribot/rules/raw/main/boost.lsr,Proxy
 RULE-SET,LAN,DIRECT
 GEOIP,CN,DIRECT
 FINAL,Proxy
