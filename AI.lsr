@@ -8,6 +8,8 @@ DOMAIN,guzzoni.smoot.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,prodregistryv2.org
 DOMAIN,challenges.cloudflare.com
+# OpenCode
+DOMAIN,opencode.ai
 # OpenAI
 AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
 AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))
@@ -94,6 +96,7 @@ DOMAIN-SUFFIX,grok.com
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
+
 # OpenRouter
 DOMAIN-SUFFIX,openrouter.ai
 # TokenFlux
