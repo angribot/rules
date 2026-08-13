@@ -1,5 +1,5 @@
 # author: 可莉🅥
-# 2026-06-17 18:54:34
+# 2026-07-15 13:18:31
 # Apple
 DOMAIN,apple-relay.apple.com,extended-matching
 DOMAIN,apple-relay.cloudflare.com
@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,chatgpt.site
 # Copilot
 DOMAIN,api.githubcopilot.com
 DOMAIN,copilot-proxy.githubusercontent.com
@@ -40,6 +41,7 @@ DOMAIN,models.inference.ai.azure.com
 # Gemini
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
+DOMAIN,aicode.googleapis.com
 DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
@@ -96,7 +98,6 @@ DOMAIN-SUFFIX,grok.com
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
-
 # OpenRouter
 DOMAIN-SUFFIX,openrouter.ai
 # TokenFlux
@@ -140,3 +141,6 @@ DOMAIN-SUFFIX,minimax.io
 DOMAIN-SUFFIX,z.ai
 # 小米国际
 DOMAIN,token-plan-sgp.xiaomimimo.com
+DOMAIN,token-plan-ams.xiaomimimo.com
+# Agnes AI
+DOMAIN-SUFFIX,agnes-ai.com
