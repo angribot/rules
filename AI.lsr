@@ -74,6 +74,7 @@ DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 # Anthropic
+DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeusercontent.com
