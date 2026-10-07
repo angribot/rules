@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN-SUFFIX,ads-twitter.com,extended-matching
 DOMAIN-SUFFIX,cms-twdigitalassets.com
 DOMAIN-SUFFIX,periscope.tv

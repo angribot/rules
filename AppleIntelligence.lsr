@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
 DOMAIN,apple-relay.fastly-edge.com

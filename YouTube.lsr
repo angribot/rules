@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN,yt3.googleusercontent.com,extended-matching
 DOMAIN-SUFFIX,ads.youtube.com
 DOMAIN-SUFFIX,ggpht.cn

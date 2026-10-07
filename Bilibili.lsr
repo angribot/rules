@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN,upos-hz-mirrorakam.akamaized.net,extended-matching
 DOMAIN-SUFFIX,acg.tv
 DOMAIN-SUFFIX,acgvideo.com

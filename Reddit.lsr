@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,reddit.app.link
 DOMAIN-SUFFIX,reddit.com

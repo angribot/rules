@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN,az764295.vo.msecnd.net,extended-matching
 DOMAIN,azure.microsoft.com
 DOMAIN,azuremarketplace.microsoft.com

@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN-SUFFIX,local
 IP-CIDR,0.0.0.0/8,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve

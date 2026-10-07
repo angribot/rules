@@ -1,3 +1,4 @@
+# vim: ft=surge_ruleset
 DOMAIN,applemusic.com
 DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,itunes.apple.com
