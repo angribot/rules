@@ -1,6 +1,6 @@
 # vim: ft=surge_ruleset
 # author: 可莉🅥
-# 2026-07-15 13:18:31
+# 2026-11-02 20:02:33
 # Apple
 DOMAIN,apple-relay.apple.com,extended-matching
 DOMAIN,apple-relay.cloudflare.com
@@ -16,6 +16,7 @@ DOMAIN,opencode.ai
 AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,o33249.ingest.sentry.io
+DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN,openai.qualtrics.com
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaiassets.blob.core.windows.net
@@ -33,51 +34,98 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 # Copilot
 DOMAIN,api.githubcopilot.com
 DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,copilot-telemetry-service.githubusercontent.com
+DOMAIN,copilot-telemetry.githubusercontent.com
+DOMAIN,copilot-workspace.githubnext.com
+DOMAIN,copilot.cloud.microsoft
 DOMAIN,copilot.microsoft.com
+DOMAIN,copilotprodattachments.blob.core.windows.net
 DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,copilot-stg.com
+DOMAIN-SUFFIX,copilot.com
+DOMAIN-SUFFIX,githubcopilot.com
 # Github Models
 DOMAIN,models.inference.ai.azure.com
 # Gemini
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aicode.googleapis.com
+DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.clients.google.com
+DOMAIN,appsgenaiserver-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.googleapis.com
 DOMAIN,bard.google.com
+DOMAIN,cloudaicompanion.googleapis.com
+DOMAIN,cloudcode-pa.googleapis.com
 DOMAIN,deepmind.com
 DOMAIN,deepmind.google
+DOMAIN,flow.google
+DOMAIN,flow.google.com
 DOMAIN,geller-pa.googleapis.com
 DOMAIN,gemini.google
 DOMAIN,gemini.google.com
+DOMAIN,gemini.gstatic.com
+DOMAIN,geminiweb-pa.clients.google.com
+DOMAIN,geminiweb-pa.clients6.google.com
 DOMAIN,generativeai.google
 DOMAIN,generativelanguage.googleapis.com
-DOMAIN,makersuite.google.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN,notebooklm.google
-DOMAIN,notebooklm.google.com
 DOMAIN,jules.google
 DOMAIN,jules.google.com
 DOMAIN,labs.google
-DOMAIN,aisandbox-pa.googleapis.com
+DOMAIN,labs.google.com
+DOMAIN,labstailwind.pa.googleapis.com
+DOMAIN,makersuite.google.com
+DOMAIN,notebook.google
+DOMAIN,notebook.google.com
+DOMAIN,notebooklm-pa.googleapis.com
+DOMAIN,notebooklm.google
+DOMAIN,notebooklm.google.com
+DOMAIN,notebooklm.googleapis.com
+DOMAIN,opal.google
+DOMAIN,opal.google.com
+DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,stitch.withgoogle.com
+DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,ai.studio
 # Google Antigravity
-DOMAIN-SUFFIX,antigravity.google
-DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN,antigravity-pa.googleapis.com
+DOMAIN,antigravity.googleapis.com
 DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,antigravity.google
 AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 # Anthropic
 DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,ant.dev
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,anthropic.team
+DOMAIN-SUFFIX,antspace.dev
+DOMAIN-SUFFIX,chatbotclaude.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
 DOMAIN-SUFFIX,claudeusercontent.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
@@ -88,21 +136,28 @@ DOMAIN-SUFFIX,jetbrains.ai
 # Meta AI
 DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,muse.ai
 # Perplexity
+DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
 DOMAIN,pplx-res.cloudinary.com
-DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
+DOMAIN-SUFFIX,pplx.ai
 # Mistral AI
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 # Grok AI
 DOMAIN,api.x.ai
-DOMAIN-SUFFIX,x.ai
+DOMAIN,grok.x.com
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,x.ai
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,marscode.com
 DOMAIN-SUFFIX,trae.ai
 # OpenRouter
 DOMAIN-SUFFIX,openrouter.ai
@@ -117,8 +172,6 @@ DOMAIN-SUFFIX,fireworks.ai
 # Hyperbolic
 DOMAIN,api.hyperbolic.xyz
 DOMAIN-SUFFIX,hyperbolic.ai
-# Mistral
-DOMAIN-SUFFIX,mistral.ai
 # Jina AI
 DOMAIN-SUFFIX,jina.ai
 # GPUStack
@@ -129,24 +182,124 @@ DOMAIN-SUFFIX,voyageai.com
 DOMAIN,aiplatform.googleapis.com
 # Poe
 DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,poecdn.net
 # Cerebras AI
 DOMAIN-SUFFIX,cerebras.ai
 # Vercel AI
 DOMAIN,ai-gateway.vercel.sh
 # Hugging Face AI
 DOMAIN,router.huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,huggingface.co
 # Nvidia
 DOMAIN,integrate.api.nvidia.com
 # Kiro
 DOMAIN-SUFFIX,kiro.dev
-# CerebrasAI
-DOMAIN-SUFFIX,cerebras.ai
 # MiniMax国际版
 DOMAIN-SUFFIX,minimax.io
 # 智谱国际版
 DOMAIN-SUFFIX,z.ai
 # 小米国际
-DOMAIN,token-plan-sgp.xiaomimimo.com
 DOMAIN,token-plan-ams.xiaomimimo.com
+DOMAIN,token-plan-sgp.xiaomimimo.com
 # Agnes AI
 DOMAIN-SUFFIX,agnes-ai.com
+# Cursor
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
+# Windsurf
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,windsurf.build
+DOMAIN-SUFFIX,windsurf.com
+# CodeRabbit
+DOMAIN,coderabbit.gallery.vsassets.io
+DOMAIN-SUFFIX,coderabbit.ai
+# Cohere
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN-SUFFIX,cohere.com
+# DeepWiki
+DOMAIN-SUFFIX,deepwiki.com
+DOMAIN-SUFFIX,deepwiki.org
+# Jasper
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,jasper.ai
+# Jev
+DOMAIN-SUFFIX,typesafe.ai
+# Kimi/Moonshot
+DOMAIN-SUFFIX,kimi.ai
+DOMAIN-SUFFIX,moonshot.ai
+# Dola
+DOMAIN-SUFFIX,cici.com
+DOMAIN-SUFFIX,ciciai.com
+DOMAIN-SUFFIX,ciciaicdn.com
+DOMAIN-SUFFIX,dola.com
+# Coze
+DOMAIN-SUFFIX,coze.com
+# Comfy
+DOMAIN-SUFFIX,comfy.org
+DOMAIN-SUFFIX,comfyci.org
+DOMAIN-SUFFIX,comfyregistry.org
+DOMAIN-SUFFIX,oystermercury.top
+# ElevenLabs
+DOMAIN-SUFFIX,elevenlabs.com
+DOMAIN-SUFFIX,elevenlabs.io
+# Envato
+DOMAIN-SUFFIX,envato-static.com
+DOMAIN-SUFFIX,envato.com
+DOMAIN-SUFFIX,envatousercontent.com
+DOMAIN-SUFFIX,themeforest.net
+# LivePerson
+DOMAIN-SUFFIX,liveperson.net
+DOMAIN-SUFFIX,lpsnmedia.net
+# Manus
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manuscdn.com
+# Youmind
+DOMAIN-SUFFIX,youmind.ai
+DOMAIN-SUFFIX,youmind.com
+DOMAIN-SUFFIX,youmind.site
+# Community
+DOMAIN,gateway.ai.cloudflare.com
+DOMAIN-SUFFIX,agentclientprotocol.com
+DOMAIN-SUFFIX,anythingllm.com
+DOMAIN-SUFFIX,arena.ai
+DOMAIN-SUFFIX,artificialanalysis.ai
+DOMAIN-SUFFIX,chutes.ai
+DOMAIN-SUFFIX,clawhub.ai
+DOMAIN-SUFFIX,cline.bot
+DOMAIN-SUFFIX,commandcode.ai
+DOMAIN-SUFFIX,context7.com
+DOMAIN-SUFFIX,crewai.com
+DOMAIN-SUFFIX,devin.ai
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,dify.ai
+DOMAIN-SUFFIX,dreamgen.com
+DOMAIN-SUFFIX,duck.ai
+DOMAIN-SUFFIX,h2o.ai
+DOMAIN-SUFFIX,langchain.com
+DOMAIN-SUFFIX,lmstudio.ai
+DOMAIN-SUFFIX,lovart.ai
+DOMAIN-SUFFIX,magnific.com
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,mozilla.ai
+DOMAIN-SUFFIX,notegpt.io
+DOMAIN-SUFFIX,nousresearch.com
+DOMAIN-SUFFIX,novelai.net
+DOMAIN-SUFFIX,ollama.com
+DOMAIN-SUFFIX,openart.ai
+DOMAIN-SUFFIX,openclaw.ai
+DOMAIN-SUFFIX,openspec.dev
+DOMAIN-SUFFIX,plannotator.ai
+DOMAIN-SUFFIX,qoder.com
+DOMAIN-SUFFIX,sider.ai
+DOMAIN-SUFFIX,spicywriter.com
+DOMAIN-SUFFIX,syntx.ai
+DOMAIN-SUFFIX,talkai.info
+DOMAIN-SUFFIX,tapnow.ai
+DOMAIN-SUFFIX,tripo3d.ai
