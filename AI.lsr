@@ -1,6 +1,6 @@
 # vim: ft=surge_ruleset
 # author: 可莉🅥
-# 2026-11-02 20:02:33
+# 2026-11-27 21:07:47
 # Apple
 DOMAIN,apple-relay.apple.com,extended-matching
 DOMAIN,apple-relay.cloudflare.com
@@ -10,7 +10,7 @@ DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,prodregistryv2.org
 DOMAIN,challenges.cloudflare.com
 # OpenCode
-DOMAIN,opencode.ai
+DOMAIN-SUFFIX,opencode.ai
 # OpenAI
 # Approximation of upstream regexp: ^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
 AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
@@ -44,61 +44,62 @@ DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot-telemetry-service.githubusercontent.com
 DOMAIN,copilot-telemetry.githubusercontent.com
 DOMAIN,copilot-workspace.githubnext.com
-DOMAIN,copilot.cloud.microsoft
-DOMAIN,copilot.microsoft.com
 DOMAIN,copilotprodattachments.blob.core.windows.net
 DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN,sydney.bing.com
 DOMAIN-SUFFIX,copilot-stg.com
+DOMAIN-SUFFIX,copilot.cloud.microsoft
 DOMAIN-SUFFIX,copilot.com
+DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 # Github Models
 DOMAIN,models.inference.ai.azure.com
 # Gemini
 DOMAIN,ai.google.dev
-DOMAIN,aida.googleapis.com
-DOMAIN,aicode.googleapis.com
-DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,appsgenaiserver-pa.clients.google.com
 DOMAIN,appsgenaiserver-pa.clients6.google.com
 DOMAIN,appsgenaiserver-pa.googleapis.com
-DOMAIN,bard.google.com
 DOMAIN,cloudaicompanion.googleapis.com
 DOMAIN,cloudcode-pa.googleapis.com
-DOMAIN,deepmind.com
-DOMAIN,deepmind.google
-DOMAIN,flow.google
-DOMAIN,flow.google.com
-DOMAIN,geller-pa.googleapis.com
-DOMAIN,gemini.google
-DOMAIN,gemini.google.com
-DOMAIN,gemini.gstatic.com
 DOMAIN,geminiweb-pa.clients.google.com
 DOMAIN,geminiweb-pa.clients6.google.com
-DOMAIN,generativeai.google
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,jules.google
-DOMAIN,jules.google.com
-DOMAIN,labs.google
-DOMAIN,labs.google.com
-DOMAIN,labstailwind.pa.googleapis.com
-DOMAIN,makersuite.google.com
-DOMAIN,notebook.google
-DOMAIN,notebook.google.com
 DOMAIN,notebooklm-pa.googleapis.com
-DOMAIN,notebooklm.google
-DOMAIN,notebooklm.google.com
 DOMAIN,notebooklm.googleapis.com
-DOMAIN,opal.google
-DOMAIN,opal.google.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN,stitch.withgoogle.com
 DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
 DOMAIN-SUFFIX,ai.studio
+DOMAIN-SUFFIX,aicode.googleapis.com
+DOMAIN-SUFFIX,aida.googleapis.com
+DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,flow.google
+DOMAIN-SUFFIX,flow.google.com
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,gemini.gstatic.com
+DOMAIN-SUFFIX,gemma.ai
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,jules.google
+DOMAIN-SUFFIX,jules.google.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,labs.google.com
+DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,notebook.google
+DOMAIN-SUFFIX,notebook.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,opal.google
+DOMAIN-SUFFIX,opal.google.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+DOMAIN-SUFFIX,stitch.withgoogle.com
 # Google Antigravity
 DOMAIN,antigravity-pa.googleapis.com
 DOMAIN,antigravity.googleapis.com
@@ -153,8 +154,8 @@ DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 # Grok AI
 DOMAIN,api.x.ai
-DOMAIN,grok.x.com
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grok.x.com
 DOMAIN-SUFFIX,grokbot.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,x.ai
@@ -220,8 +221,8 @@ DOMAIN-SUFFIX,codeiumdata.com
 DOMAIN-SUFFIX,windsurf.build
 DOMAIN-SUFFIX,windsurf.com
 # CodeRabbit
-DOMAIN,coderabbit.gallery.vsassets.io
 DOMAIN-SUFFIX,coderabbit.ai
+DOMAIN-SUFFIX,coderabbit.gallery.vsassets.io
 # Cohere
 DOMAIN-SUFFIX,cohere.ai
 DOMAIN-SUFFIX,cohere.com
@@ -268,7 +269,6 @@ DOMAIN-SUFFIX,youmind.ai
 DOMAIN-SUFFIX,youmind.com
 DOMAIN-SUFFIX,youmind.site
 # Community
-DOMAIN,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,agentclientprotocol.com
 DOMAIN-SUFFIX,anythingllm.com
 DOMAIN-SUFFIX,arena.ai
@@ -285,6 +285,7 @@ DOMAIN-SUFFIX,diabrowser.engineering
 DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,dreamgen.com
 DOMAIN-SUFFIX,duck.ai
+DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,h2o.ai
 DOMAIN-SUFFIX,langchain.com
 DOMAIN-SUFFIX,lmstudio.ai
